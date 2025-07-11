@@ -1,4 +1,4 @@
-name: windows
+name: windows_msvc_static
 on:
   push:
     branches: [master]
