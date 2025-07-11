@@ -28,6 +28,12 @@ on:
     - 'tools/**'
     - '!tools/pnnx/**'
     - 'examples/**'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag version to be used for Docker image"
+        required: true
+        default: "latest"
 concurrency:
   group: windows-${{ github.ref }}
   cancel-in-progress: true
